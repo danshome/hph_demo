@@ -1,0 +1,14 @@
+hph:
+  secret: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET"
+
+recaptcha:
+  secret: "YOUR_RECAPTCHA_V3_SECRET"
+
+spring:
+  webflux:
+    cors:
+      mappings:
+        - path: /api/**
+          allowed-origins: "*"
+          allowed-methods: "GET,POST,OPTIONS"
+          allowed-headers: "*"

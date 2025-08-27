@@ -1,0 +1,12 @@
+<form (ngSubmit)="startCheckout()">
+  <label>Email
+    <input type="email" [(ngModel)]="email" name="email" required />
+  </label>
+  <div style="position:absolute;left:-9999px;top:-9999px;">
+    <label>Leave this field empty
+      <input type="text" [(ngModel)]="honeypot" name="contact_time" autocomplete="off"/>
+    </label>
+  </div>
+  <button type="submit" [disabled]="busy">Continue to Checkout</button>
+  <p *ngIf="error" style="color:#b00">{{ error }}</p>
+</form>

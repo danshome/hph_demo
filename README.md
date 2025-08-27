@@ -35,3 +35,14 @@ mvn test        # compiles the Spring Boot application
 
 The back‑end build requires internet access to download dependencies from Maven
 Central.
+
+### Docker
+
+To run both the front‑end and back‑end using Docker containers:
+
+```
+docker compose up --build
+```
+
+After the images are built and the containers start, navigate to
+<http://localhost:8080> to view the demo application.

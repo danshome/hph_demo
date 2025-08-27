@@ -26,3 +26,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore node_modules in subdirectories
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
